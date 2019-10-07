@@ -1,0 +1,21 @@
+.header .row-1 {
+	display: flex;
+	background: lightcoral;
+}
+
+.header .row-1 .navigation UL {
+	display: flex;
+    list-style: none;
+    height: 100%;
+    font-size: 20px;
+}
+
+.header .row-1 .navigation UL LI {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.header .row-1 .navigation UL LI A {
+	color: #000;
+}
