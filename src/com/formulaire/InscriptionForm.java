@@ -43,14 +43,14 @@ public class InscriptionForm {
             setErreur( CHAMP_PASS, e.getMessage() );
             setErreur( CHAMP_CONF, null );
         }
-        utilisateur.setMotDePasse( motDePasse );
+        utilisateur.setPassword( motDePasse );
 
         try {
             validationNom( nom );
         } catch ( Exception e ) {
             setErreur( CHAMP_NOM, e.getMessage() );
         }
-        utilisateur.setNom( nom );
+        utilisateur.setLogin( nom );
 
         if ( erreurs.isEmpty() ) {
             resultat = "Succès de l'inscription.";
