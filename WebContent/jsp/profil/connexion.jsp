@@ -5,15 +5,18 @@
         <meta charset="utf-8" />
         <title>Connexion</title>
         <link type="text/css" rel="stylesheet" href="form.css" />
+        <link rel="stylesheet" type="text/css" href="/webteambet/css/header.css" />
+        <link rel="stylesheet" type="text/css" href="/webteambet/css/bootstrap-4.3.1/css/bootstrap.css" />
     </head>
-    <body>
+    <body class="container">
+    	<%@ include file="../header/header.jsp" %>
         <form method="post" action="connexion">
             <fieldset>
                 <legend>Connexion</legend>
                 <p>Vous pouvez vous connecter via ce formulaire.</p>
 
                 <label for="nom">Adresse email <span class="requis">*</span></label>
-                <input type="email" id="email" name="email" value="<c:out value="${utilisateur.email}"/>" size="20" maxlength="60" />
+                <input type="email" id="email" name="email" value="" size="20" maxlength="60" />
                 <span class="erreur">${form.erreurs['email']}</span>
                 <br />
 

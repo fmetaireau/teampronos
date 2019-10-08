@@ -14,6 +14,11 @@
 		<servlet-name>Inscription</servlet-name>
 		<servlet-class>com.servlets.InscriptionServlet</servlet-class>
 	</servlet>
+	
+	<servlet>
+		<servlet-name>Connexion</servlet-name>
+		<servlet-class>com.servlets.ConnexionServlet</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>Accueil</servlet-name>
@@ -23,6 +28,11 @@
 	<servlet-mapping>
 		<servlet-name>Inscription</servlet-name>
 		<url-pattern>/inscription</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Connexion</servlet-name>
+		<url-pattern>/connexion</url-pattern>
 	</servlet-mapping>
 
 </web-app>
