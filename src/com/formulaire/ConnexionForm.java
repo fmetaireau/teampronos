@@ -56,7 +56,7 @@ public final class ConnexionForm {
         } catch ( Exception e ) {
             setErreur( COMPTE, e.getMessage() );
         }
-
+        System.out.println("erreur  =  " + erreurs);
         /* Initialisation du résultat global de la validation. */
         if ( erreurs.isEmpty() ) {
             resultat = "Succès de la connexion.";
@@ -93,12 +93,23 @@ public final class ConnexionForm {
      * Valide si l'utilisateur existe.
      */
     private void validationUser( String email, String motDePasse, List<User> listUser ) throws Exception {
+    	boolean mail = false;
+		boolean pass = false;
     	for (User user : listUser) {
-    		if (!user.getEmail().equals(email)) {
-    			throw new Exception( "Le mail ne correspond à aucun compte." );
-    		} else if (!user.getPassword().equals(motDePasse)) {
-    			throw new Exception( "Le mot de passe est invalise pour cette adrese mail." );
-			}
+    		if (user.getEmail().equals(email)) {
+    			mail = true;
+    			if (user.getPassword().equals(motDePasse)) {
+    				pass = true;
+    			} else {
+    				mail = false;
+    			}
+    		}
+    	}
+    	if (!mail) {
+    		throw new Exception( "Le mail ne correspond à aucun compte." );
+    	}
+    	if (!pass) {
+    		throw new Exception( "Le mot de passe est invalise pour cette adrese mail." );
     	}
     }
 

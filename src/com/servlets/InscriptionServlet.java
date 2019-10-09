@@ -44,17 +44,11 @@ public class InscriptionServlet extends HttpServlet {
         utilisateur.setEmail(request.getParameter("email"));
         utilisateur.setLogin(request.getParameter("pseudo"));
         utilisateur.setPassword(request.getParameter("password"));
-        System.out.println(utilisateur);
         utilisateurDao.ajouter(utilisateur);
-//        request.removeAttribute("email");
-//        request.removeAttribute("pseudo");
-//        request.removeAttribute("password");
         
         request.setAttribute("utilisateurs", utilisateurDao.lister());
         
         this.getServletContext().getRequestDispatcher("/jsp/profil/inscription.jsp").forward(request, response);
     }
     
-    
-
 }
