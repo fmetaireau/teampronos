@@ -19,6 +19,21 @@
 		<servlet-name>Connexion</servlet-name>
 		<servlet-class>com.servlets.ConnexionServlet</servlet-class>
 	</servlet>
+	
+	<servlet>
+		<servlet-name>Deconnexion</servlet-name>
+		<servlet-class>com.servlets.DeconnexionServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>MonCompte</servlet-name>
+		<servlet-class>com.servlets.MonCompteServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ListeQuestion</servlet-name>
+		<servlet-class>com.servlets.ListeQuestionServlet</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>Accueil</servlet-name>
@@ -33,6 +48,21 @@
 	<servlet-mapping>
 		<servlet-name>Connexion</servlet-name>
 		<url-pattern>/connexion</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Deconnexion</servlet-name>
+		<url-pattern>/deconnexion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MonCompte</servlet-name>
+		<url-pattern>/moncompte</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ListeQuestion</servlet-name>
+		<url-pattern>/listequestion</url-pattern>
 	</servlet-mapping>
 
 </web-app>

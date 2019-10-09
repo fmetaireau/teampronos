@@ -56,14 +56,20 @@ public final class ConnexionForm {
         } catch ( Exception e ) {
             setErreur( COMPTE, e.getMessage() );
         }
-        System.out.println("erreur  =  " + erreurs);
         /* Initialisation du résultat global de la validation. */
         if ( erreurs.isEmpty() ) {
             resultat = "Succès de la connexion.";
         } else {
             resultat = "Échec de la connexion.";
         }
-
+        
+        for (User user : listUser) {
+    		if (user.getEmail().equals(email) && user.getPassword().equals(motDePasse)) {
+    			utilisateur.setId(user.getId());
+    			utilisateur.setLogin(user.getLogin());
+    		}
+    	}
+        
         return utilisateur;
     }
 
