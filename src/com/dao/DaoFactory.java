@@ -35,9 +35,14 @@ public class DaoFactory {
     public UserDao getUtilisateurDao() {
         return new UserDaoImpl(this);
     }
-    
-    // Récupération du Dao
     public QuestionDao getQuestionDao() {
         return new QuestionDaoImpl(this);
     }
+    public SportDao getSportDao() {
+        return new SportDaoImpl(this);
+    }
+    public LigueDao getLigueDao() {
+        return new LigueDaoImpl(this);
+    }
+   
 }

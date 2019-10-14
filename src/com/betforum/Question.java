@@ -8,6 +8,8 @@ public class Question {
 	private String question;
 	private int idUser;
 	private Date date;
+	private String sport;
+	private String ligue;
 	
 	public int getId() {
 		return id;
@@ -33,5 +35,16 @@ public class Question {
 	public void setDate(Date time) {
 		this.date = time;
 	}
-	
+	public String getSport() {
+		return sport;
+	}
+	public void setSport(String sport) {
+		this.sport = sport;
+	}
+	public String getLigue() {
+		return ligue;
+	}
+	public void setLigue(String ligue) {
+		this.ligue = ligue;
+	}
 }

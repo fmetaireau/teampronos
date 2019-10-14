@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="com.formulaire.User"%>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -10,5 +11,9 @@
     <body class="container">
     	<%@ include file="header/header.jsp" %>
         <div>Page d'accueil du site</div>
+         <% User obj = (User) request.getSession().getAttribute("sessionUtilisateur"); %>
+         <% if (obj != null) { %>
+        	Session utilisateur : <%= obj.getEmail() %>  <%= obj.getId() %>
+        <% } %>
     </body>
 </html>

@@ -1,6 +1,23 @@
 .header .row-1 {
 	display: flex;
-	background: lightcoral;
+}
+
+.header .row-1 .navigation {
+	position: relative;
+	background: #E03136;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.header .row-1 .navigation:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-color: #E03136;
+	left: 100%;
+	right: -9999px;
+	z-index: -1;
 }
 
 .header .row-1 .navigation UL {
@@ -17,5 +34,5 @@
 }
 
 .header .row-1 .navigation UL LI A {
-	color: #000;
+	color: #fff;
 }

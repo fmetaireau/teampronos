@@ -1,0 +1,30 @@
+.page-question .title-list-question {
+	margin-bottom: 15px;
+}
+
+.page-question .list-question .item {
+	width: 33%;
+	display: inline-block;
+}
+
+.page-question .list-question .item .sport-ligue {
+	background-color: #E03136;
+    color: white;
+    text-align: center;
+}
+.page-question .list-question .item .body {
+	padding: 10px 5px;
+	border: 1px solid #f4f4f4;
+	border-top: none;
+}
+.page-question .list-question .item .body .question {
+	font-size: 18px;
+}
+.page-question .list-question .item .body .auteur {
+	
+}
+
+.page-question .list-question .item .body .button {
+	color: #E03136;
+	text-align: center;
+}    

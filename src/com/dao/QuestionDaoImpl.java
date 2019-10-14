@@ -24,13 +24,15 @@ public class QuestionDaoImpl implements QuestionDao {
 
         try {
             connexion = daoFactory.getConnection();
-            preparedStatement = connexion.prepareStatement("INSERT INTO question(id, question, auteur, date) VALUES(?, ?, ?, ?);");
+            preparedStatement = connexion.prepareStatement("INSERT INTO question(id, question, auteur, date, sport, ligue) VALUES(?, ?, ?, ?, ?, ?);");
             preparedStatement.setInt(1, question.getId());
             preparedStatement.setString(2, question.getQuestion());
             preparedStatement.setInt(3, question.getIdUser());
             Date date_util = question.getDate();
             java.sql.Date date_sql = new java.sql.Date(date_util.getTime());
             preparedStatement.setDate(4, date_sql);
+            preparedStatement.setString(5, question.getSport());
+            preparedStatement.setString(6, question.getLigue());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -47,19 +49,23 @@ public class QuestionDaoImpl implements QuestionDao {
         try {
             connexion = daoFactory.getConnection();
             statement = connexion.createStatement();
-            resultat = statement.executeQuery("SELECT id, question, auteur, date FROM question;");
+            resultat = statement.executeQuery("SELECT id, question, auteur, date, sport, ligue FROM question;");
 
             while (resultat.next()) {
             	int id = resultat.getInt("id");
                 String questionSt = resultat.getString("question");
                 int idUser = resultat.getInt("auteur");
                 Date date = resultat.getDate("date");
+                String sport = resultat.getString("sport");
+                String ligue = resultat.getString("ligue");
 
                 Question question = new Question();
                 question.setId(id);
                 question.setQuestion(questionSt);
                 question.setIdUser(idUser);
                 question.setDate(date);
+                question.setSport(sport);
+                question.setLigue(ligue);
 
                 questions.add(question);
             }

@@ -41,7 +41,8 @@ public class ListeQuestionServlet extends HttpServlet {
         question.setQuestion(request.getParameter("sujet"));
         question.setIdUser(idUser);
         question.setDate(time);
-        System.out.println(question);
+        question.setSport(request.getParameter("sport"));
+        question.setLigue(request.getParameter("ligue"));
         questionDao.ajouter(question);
         
         this.getServletContext().getRequestDispatcher("/jsp/profil/inscription.jsp").forward(request, response);
