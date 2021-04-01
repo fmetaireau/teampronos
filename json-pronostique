@@ -1,4 +1,4 @@
-{"type":"table","name":"pronostique","database":"teampronos","data":
+{"data":
 [
 {"id":"p_1","typepronos":"simple","idmatch":"m_1","cote":"2,20","fiabilite":"3","resultat":"Win"}
 ]
