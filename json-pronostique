@@ -1,0 +1,9 @@
+[
+{"type":"header","version":"5.0.2","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"teampronos"},
+{"type":"table","name":"pronostique","database":"teampronos","data":
+[
+{"id":"p_1","typepronos":"simple","idmatch":"m_1","cote":"2,20","fiabilite":"3","resultat":"Win"}
+]
+}
+]
