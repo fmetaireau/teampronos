@@ -1,2 +1,3 @@
-# webteambet
-Forum paries sportifs. 
+# TEAM PRONOS
+
+Gestion des JSON pour afficher les paries dans l'application
