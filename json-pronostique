@@ -1,6 +1,7 @@
 {"data":
 [
-{"id":"p_1","typepronos":"simple","idmatch":"m_1","cote":"2,20","fiabilite":"3","resultat":"Win"}
+{"id":"p_1","typepronos":"simple","idmatch":"m_1","cote":"2,20","fiabilite":"3","resultat":"Win"},
+{"id":"p_2","typepronos":"simple","idmatch":"m_2","cote":"1,70","fiabilite":"3","resultat":"Win"}
 ]
 }
 
