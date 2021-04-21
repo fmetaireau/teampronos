@@ -1,7 +1,7 @@
 {"data":
 [
 {"id":"p_7","typepronos":"combine","idmatch":"ma_4 ma_5","cote":"1,55","fiabilite":"80%","date":"21\/04\/2021","heure":"12h30","resultat":"En cours"},
-{"id":"p_6","typepronos":"combine","idmatch":"ma_2 ma_3","cote":"1,90","fiabilite":"70%","date":"20\/04\/2021","heure":"17h00","resultat":"En cours"},
+{"id":"p_6","typepronos":"combine","idmatch":"ma_2 ma_3","cote":"1,90","fiabilite":"70%","date":"20\/04\/2021","heure":"17h00","resultat":"Loose"},
 {"id":"p_5","typepronos":"combine","idmatch":"m_9 ma_1","cote":"2,63","fiabilite":"60%","date":"18\/04\/2021","heure":"14h30","resultat":"Loose"},
 {"id":"p_4","typepronos":"combine","idmatch":"m_6 m_7 m_8","cote":"2,12","fiabilite":"70%","date":"17\/04\/2021","heure":"15h00","resultat":"Win"},
 {"id":"p_3","typepronos":"combine","idmatch":"m_4 m_5","cote":"1,70","fiabilite":"70%","date":"16\/04\/2021","heure":"11h00","resultat":"Loose"},
