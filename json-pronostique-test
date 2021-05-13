@@ -1,6 +1,5 @@
 {"data":
 [
-
 {"id":"pron_1","typepronos":"combine","idmatch":"matchs_6 matchs_7","cote":"1,69","fiabilite":"80%","date":"14\/05\/2021","heure":"13h15","resultat":"En cours"},
 {"id":"pro_9","typepronos":"combine","idmatch":"matchs_4 matchs_5","cote":"1,69","fiabilite":"70%","date":"13\/05\/2021","heure":"10h00","resultat":"Loose"},
 {"id":"pro_8","typepronos":"combine","idmatch":"matchs_2 matchs_3","cote":"1,50","fiabilite":"80%","date":"12\/05\/2021","heure":"10h00","resultat":"Win"},
