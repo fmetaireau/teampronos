@@ -1,5 +1,6 @@
 {"data":
 [
+{"id":"p_2","typepronos":"combine","idmatch":"m_3 m_4","cote":"1,62","fiabilite":"70%","date":"02\/07\/2021","heure":"15h30","resultat":"En cours"},
 {"id":"p_1","typepronos":"combine","idmatch":"m_1 m_2","cote":"1,44","fiabilite":"80%","date":"01\/07\/2021","heure":"16h00","resultat":"Win"}
 ]
 }
