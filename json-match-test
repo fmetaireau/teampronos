@@ -1,5 +1,6 @@
 {"data":
 [
-{"id":"m_1","match":"Bautista - Ruusuvuori","vainqueur":"Victoire de Bautista","date":"01\/09\/2021","heure":"19h00","sport":"Tennis","ligue":"US Open","cote":"1,49","analyse":"Bautista a fait un super premier match sur Kyrgios. Il joue un adversiare largement a sa porté et devrait le dominer du fond de court.", "image":""}
+{"id":"m_1","match":"Bautista - Ruusuvuori","vainqueur":"Victoire de Bautista","date":"01\/09\/2021","heure":"19h00","sport":"Tennis","ligue":"US Open","cote":"1,49","analyse":"Bautista a fait un super premier match sur Kyrgios. Il joue un adversiare largement a sa porté et devrait le dominer du fond de court.", "image":""},
+{"id":"m_2","match":"Minnen - Samsonova","vainqueur":"Victoire de Samsonova","date":"02\/09\/2021","heure":"18h30","sport":"Tennis","ligue":"US Open","cote":"1,50","analyse":"Samsonova est pour moi supérieur à son adversaire du jour. Elle a beaucoup progressée cette saison et joue désormais très bien. Elle sert bien et est assez puissante. Elle a jamais battu Minnen mais les deux confrontations étaient en 2019.", "image":""}
 ]
 }
